@@ -1,0 +1,63 @@
+{% extends 'portfolio/base.html' %}
+
+{% block content %}
+
+    {% load static %}
+
+    <div class="row justify-content-center my-3">
+        <div class="col-5">
+
+          <img class="rounded mx-auto d-block" src="{%static 'portfolio/nestorprofile.jpg'%}" class="img-fluid">
+
+        </div>
+      </div>
+
+      <div class="row justify-content-center mb-3">
+        <div class="col-md-9 text-center">
+          <h2 id="hometext" class="font-weight-bold">I'm Néstor, a minimalist Python & PHP Developer</h2>
+        </div>
+      </div>
+
+      <div class="row justify-content-center mb-3">
+        <div class="col-md-9 text-center">
+    <p class="text-center">Minimalism is about the important things:</p>
+    <ul class="text-center">
+        <li>Maximize the output</li>
+        <li>Minimize the impact</li>
+        <li>Prioritize</li>
+        <li>Synthesize</li>
+    </ul>
+    </div>
+    </div>
+
+    <div class="mx-5">
+    <h2 class="mt-5">Portfolio</h2>
+    <hr>
+    <div class="row">
+      {% for project in projects %}
+      <div class="col-lg-4 col-md-6">
+    
+        {% if project.url %}
+        <a href="{{ project.url }}" target="blank">
+          <img src="{{ project.image.url }}" class="img-fluid mb-2">
+                  </a>
+        {% else %}
+    
+        <img src="{{ project.image.url }}" class="img-fluid mb-2">
+        {% endif %}
+        <h3>{{ project.title }}</h3>
+ 
+        <p>{{ project.description }}</p>
+        {% if project.url %}
+        <div class="col text-center">
+        <a href="{{ project.url }}" target="blank">
+        <button type="button" class="btn btn-primary mb-5 px-5">Visit the live version</button> 
+        </a>
+      </div>         
+        {% endif %}
+      </div>
+      {% endfor %}
+    </div>
+{% endblock %}
+
+   

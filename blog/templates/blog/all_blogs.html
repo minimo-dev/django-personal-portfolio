@@ -1,0 +1,18 @@
+{% extends 'portfolio/base.html' %}
+
+{% block content %}
+
+<h1>Dev Blog</h1>
+
+<h2>Nestor has written {{posts.count}} post{{posts.count|pluralize}}</h2>
+
+{% for post in posts %}
+<a href="{% url 'detail' post.id %}"><h2>{{post.title}}</h2></a>
+<h5>{{ post.date|date:'M d Y'|upper }}</h5>
+{% if post.image %}
+<img src="{{post.image.url}}" width=500>
+{% endif %}
+<p>{{ post.post|striptags|truncatechars:250 }} </p>
+{% endfor %}
+
+{% endblock %}
