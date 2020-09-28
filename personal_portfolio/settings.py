@@ -26,7 +26,7 @@ SECRET_KEY = key.encodedkey
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['localhost']
+ALLOWED_HOSTS = ['localhost', 'nestorsan.com', '207.154.223.249']
 
 
 # Application definition
