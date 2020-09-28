@@ -5,7 +5,7 @@
     {% load static %}
 
     <div class="row justify-content-center my-3">
-        <div class="col-5">
+        <div class="col-10 text-center">
 
           <img class="rounded mx-auto d-block" src="{%static 'portfolio/nestorprofile.jpg'%}" class="img-fluid">
 
@@ -13,25 +13,43 @@
       </div>
 
       <div class="row justify-content-center mb-3">
+        <div class="col-10 text-center">
+          <h2 id="hometext" class="font-weight-bold">I'm Néstor-San, a Traditional Japanese Backend Developer.</h2>
+        </div>
+      </div>
+      <div class="row justify-content-center mb-3">
         <div class="col-md-9 text-center">
-          <h2 id="hometext" class="font-weight-bold">I'm Néstor, a minimalist Python & PHP Developer</h2>
+          <h5 id="hometext" class="font-weight-bold">I'm traditional, so I build services that last for long.</h5>
+        </div>
+      </div>
+      <div class="row justify-content-center mb-3">
+        <div class="col-md-9 text-center">
+          <h5 id="hometext" class="font-weight-bold">I'm not Japanese (although I try to work like if I am one).</h5>
         </div>
       </div>
 
       <div class="row justify-content-center mb-3">
         <div class="col-md-9 text-center">
-    <p class="text-center">Minimalism is about the important things:</p>
+          <h5 id="hometext" class="font-weight-bold">I'm definetely a Python Backend Developer.</h5>
+        </div>
+      <div class="row justify-content-center mb-3">
+        <div class="col-md-9 text-center mt-5">
+    <h4 class="text-center">These are some of the tasks I can do for you:</h4>
     <ul class="text-center">
-        <li>Maximize the output</li>
-        <li>Minimize the impact</li>
-        <li>Prioritize</li>
-        <li>Synthesize</li>
+        <li class="mt-4">Create an intelligent platform to receive and process your orders.</li>
+        <li class="mt-4">Process millions of data rows and get useful insights for your management.</li>
+        <li class="mt-4">Automate the most tedious parts of your business (that a computer can do).</li>
+        <li class="mt-4">Build a SMART website that can manage users, costumers or employees.</li>
+        <li class="mt-4">Bring from conception to production any REST-API that you can imagine.</li>
+        <li class="mt-4">Anything that can be built using Python and/or rendered using HTML and Javascript.</li>
     </ul>
+
+    </div>
     </div>
     </div>
 
     <div class="mx-5">
-    <h2 class="mt-5">Portfolio</h2>
+    <h2 class="text-center mt-5">Last Projects</h2>
     <hr>
     <div class="row">
       {% for project in projects %}

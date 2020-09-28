@@ -11,13 +11,13 @@
     <link rel="stylesheet" href="{% static "portfolio/custom.css" %}">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.1/css/bootstrap.min.css" integrity="sha384-VCmXjywReHh4PwowAiWNagnWcLhlEJLA5buUprzK8rxFgeH0kww/aWY76TfkUoSX" crossorigin="anonymous">
     <link rel="icon" type="image/png" href="{% static "portfolio/favicon.png" %}">
-    <title>Néstor - Minimo Dev.</title>
+    <title>Néstor-San</title>
   </head>
   <body>
 
     <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top d-flex bd-highlight mb-2">
       <div clas="p-2 bd-highlight">
-      <a href="/"><img src="{%static 'portfolio/logo-rasterizado_600x162.png'%}" height="40" alt="" loading="lazy"></a>
+        <a class="navbar-brand" href="https://nestorsan.com">Nestor-San</a>
     </div> 
     <div class="ml-auto p-2 bd-highlight">
         <button class="navbar-toggler right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -33,10 +33,12 @@
               <a class="nav-link" href="https://www.linkedin.com/in/nsromero/" target=blank>Linkedin</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="https://github.com/minimo-dev" target=blank>Github</a>
+              <a class="nav-link" href="https://github.com/nestor-san" target=blank>Github</a>
             </li>
-          </ul>
- 
+            <li class="nav-item">
+              <a class="nav-link" href="mailto:hi@nestorsan.com" target=blank>Contact</a>
+            </li>
+          </ul> 
         </div>
       </div> 
       </nav>
@@ -46,7 +48,27 @@
     {% block content%} 
     {% endblock%}
     
-    
+    <div class="card text-center">
+      <div class="card-header">
+       <h2>Let's connect!</h2>
+      </div>
+      <div class="card-body">
+        <h5 class="card-title">If you want to contact me, the best option is to write me an email.</h5>
+        <p class="card-text">Please, send an email to <a href="mailto:hi@nestorsan.com">hi@nestorsan.com</a> and I'll reply in the next 24 hours. If any issues, you can also use <a href="https://www.linkedin.com/in/nsromero/" target=blank>Linkedin</a>.</p>
+        <a href="mailto:hi@nestorsan.com" class="btn btn-primary">Send an email!</a>
+      </div>
+      <div class="card-footer text-muted">
+        <footer class="page-footer font-small blue">
+
+          <!-- Copyright -->
+          <div class="footer-copyright text-center py-3">© 2020 Copyright:
+            <a href="https://nestorsan.com/"> Néstor Sánchez</a>
+          </div>
+          <!-- Copyright -->
+        
+        </footer>
+      </div>
+    </div>
 
 
     <!-- Optional JavaScript -->
