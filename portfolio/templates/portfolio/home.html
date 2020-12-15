@@ -14,17 +14,22 @@
 
       <div class="row justify-content-center mb-3">
         <div class="col-10 text-center">
-          <h2 id="hometext" class="font-weight-bold">I'm Néstor-San, a Traditional Japanese Backend Developer.</h2>
+          <h2 id="hometext" class="font-weight-bold">I'm Néstor-San, a Minimalist Traditional Japanese Python Backend Developer.</h2>
         </div>
       </div>
       <div class="row justify-content-center mb-3">
         <div class="col-md-9 text-center">
-          <h5 id="hometext" class="font-weight-bold">I'm traditional, so I build services that last for long.</h5>
+          <h5 id="hometext" class="font-weight-bold">I'm minimalist, unless I want to have some fun.</h5>
         </div>
       </div>
       <div class="row justify-content-center mb-3">
         <div class="col-md-9 text-center">
-          <h5 id="hometext" class="font-weight-bold">I'm not Japanese (although I try to work like if I am one).</h5>
+          <h5 id="hometext" class="font-weight-bold">I'm traditional, and I don't pretend to be the trendiest developer out there.</h5>
+        </div>
+      </div>
+      <div class="row justify-content-center mb-3">
+        <div class="col-md-9 text-center">
+          <h5 id="hometext" class="font-weight-bold">I'm not Japanese, although I try to work like if I am one.</h5>
         </div>
       </div>
 
@@ -32,25 +37,30 @@
         <div class="col-md-9 text-center">
           <h5 id="hometext" class="font-weight-bold">I'm definetely a Python Backend Developer.</h5>
         </div>
-      <div class="row justify-content-center mb-3">
-        <div class="col-md-9 text-center mt-5">
-    <h4 class="text-center">These are some of the tasks I can do for you:</h4>
-    <ul class="text-center">
-        <li class="mt-4">Create an intelligent platform to receive and process your orders.</li>
-        <li class="mt-4">Process millions of data rows and get useful insights for your management.</li>
-        <li class="mt-4">Automate the most tedious parts of your business (that a computer can do).</li>
-        <li class="mt-4">Build a SMART website that can manage users, costumers or employees.</li>
-        <li class="mt-4">Bring from conception to production any REST-API that you can imagine.</li>
-        <li class="mt-4">Anything that can be built using Python and/or rendered using HTML and Javascript.</li>
-    </ul>
+     </div>
+     <div class="row justify-content-center mb-3">
+    <p>In case you want to know more about me, feel free to check my <a href="{%static 'portfolio/Nestor-Sanchez-CV-photo.pdf'%}" target="blank">resume</a> , my <a href="https://github.com/nestor-san" target="blank">Github</a> page, or my <a href="https://www.linkedin.com/in/nsromero/" target="blank">Linkedin profile</a>.</p>   
+    </div>
+    <hr>
+      <div class="mx-5">
+        <h2 class="text-center mt-5">These are the tools I currently use:</h2>
+        <br>
+     </div>
 
-    </div>
-    </div>
-    </div>
+
+
+      <img class="rounded mx-auto d-block" src="{%static 'portfolio/toolsIuse_600.png'%}" class="img-fluid">
+      <p class="text-center mt-5">Other tools: Fastapi, MySQL, Flake8, UnitTest, Scrapy... </p>
+
+   
+
+    <hr>
+
 
     <div class="mx-5">
-    <h2 class="text-center mt-5">Last Projects</h2>
-    <hr>
+    <h2 class="text-center mt-5">These are the projects I worked on:</h2>
+    <br>
+  
     <div class="row">
       {% for project in projects %}
       <div class="col-lg-4 col-md-6">
@@ -76,6 +86,27 @@
       </div>
       {% endfor %}
     </div>
+    <hr>
+    <div class="row">
+      <div class="mx-5 mx-auto">
+      <h2 class="text-center mt-5">These are some of the tasks I can do for you:</h2>
+      
+      <ul class="text-center">
+          <li class="mt-4">Create an intelligent platform to receive and process your orders.</li>
+          <li class="mt-4">Process millions of data rows and get useful insights for your management.</li>
+          <li class="mt-4">Automate the most tedious parts of your business (that a computer can do).</li>
+          <li class="mt-4">Build a SMART website Backend that can manage users, costumers or employees.</li>
+          <li class="mt-4">Bring from conception to production any REST-API that you can imagine.</li>
+          <li class="mt-4">Anything that can be built using Python and/or rendered using HTML and Javascript.</li>
+      </ul>
+      <br>
+      <br>
+  
+      </div>
+      </div>
+
+      </div>
+
 {% endblock %}
 
    
